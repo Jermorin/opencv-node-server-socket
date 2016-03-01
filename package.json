@@ -1,7 +1,7 @@
 {
   "name": "opencv-server-socket",
-  "version": "0.0.3",
-  "description": "Simple opencv server who emmit faces position",
+  "version": "1.0.0",
+  "description": "Simple opencv server who emit faces position",
   "main": "dist/index.js",
   "bin": {
     "opencv-server-socket": "dist/index.js"

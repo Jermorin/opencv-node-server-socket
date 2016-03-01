@@ -36,17 +36,17 @@
     <img src="https://www.bithound.io/github/Jermorin/opencv-server-socket/badges/score.svg"
          alt="bitHound Overall Score">
   </a>
-  
+
   <a href="https://www.bithound.io/github/Jermorin/opencv-server-socket/master/dependencies/npm">
     <img src="https://www.bithound.io/github/Jermorin/opencv-server-socket/badges/dependencies.svg"
          alt="bitHound Dependencies">
   </a>
-  
+
   <a href="https://www.bithound.io/github/Jermorin/opencv-server-socket/master/dependencies/npm">
     <img src="https://www.bithound.io/github/Jermorin/opencv-server-socket/badges/devDependencies.svg"
          alt="bitHound Dev Dependencies">
   </a>
-  
+
   <a href="https://www.bithound.io/github/Jermorin/opencv-server-socket">
     <img src="https://www.bithound.io/github/Jermorin/opencv-server-socket/badges/code.svg"
          alt="bitHound Code">
@@ -55,13 +55,13 @@
 
 <p align="center">
   <big>
-    Simple opencv server who emmit faces position
+    Simple opencv server who emit faces position
   </big>
 </p>
 
 ##Requirement
 
-- OpenCv 2.4.*
+- install `OpenCv 2.4.*`
 
 ## Install
 
