@@ -1,54 +1,54 @@
-<big><h1 align="center">opencv-node-server-socket</h1></big>
+<big><h1 align="center">opencv-server-socket</h1></big>
 
 <p align="center">
-  <a href="https://npmjs.org/package/opencv-node-server-socket">
-    <img src="https://img.shields.io/npm/v/opencv-node-server-socket.svg?style=flat-square"
+  <a href="https://npmjs.org/package/opencv-server-socket">
+    <img src="https://img.shields.io/npm/v/opencv-server-socket.svg?style=flat-square"
          alt="NPM Version">
   </a>
 
-  <a href="https://coveralls.io/r/Jermorin/opencv-node-server-socket">
-    <img src="https://img.shields.io/coveralls/Jermorin/opencv-node-server-socket.svg?style=flat-square"
+  <a href="https://coveralls.io/r/Jermorin/opencv-server-socket">
+    <img src="https://img.shields.io/coveralls/Jermorin/opencv-server-socket.svg?style=flat-square"
          alt="Coverage Status">
   </a>
 
-  <a href="https://travis-ci.org/Jermorin/opencv-node-server-socket">
-    <img src="https://img.shields.io/travis/Jermorin/opencv-node-server-socket.svg?style=flat-square"
+  <a href="https://travis-ci.org/Jermorin/opencv-server-socket">
+    <img src="https://img.shields.io/travis/Jermorin/opencv-server-socket.svg?style=flat-square"
          alt="Build Status">
   </a>
 
-  <a href="https://npmjs.org/package/opencv-node-server-socket">
-    <img src="http://img.shields.io/npm/dm/opencv-node-server-socket.svg?style=flat-square"
+  <a href="https://npmjs.org/package/opencv-server-socket">
+    <img src="http://img.shields.io/npm/dm/opencv-server-socket.svg?style=flat-square"
          alt="Downloads">
   </a>
 
-  <a href="https://david-dm.org/Jermorin/opencv-node-server-socket.svg">
-    <img src="https://david-dm.org/Jermorin/opencv-node-server-socket.svg?style=flat-square"
+  <a href="https://david-dm.org/Jermorin/opencv-server-socket.svg">
+    <img src="https://david-dm.org/Jermorin/opencv-server-socket.svg?style=flat-square"
          alt="Dependency Status">
   </a>
 
-  <a href="https://github.com/Jermorin/opencv-node-server-socket/blob/master/LICENSE">
-    <img src="https://img.shields.io/npm/l/opencv-node-server-socket.svg?style=flat-square"
+  <a href="https://github.com/Jermorin/opencv-server-socket/blob/master/LICENSE">
+    <img src="https://img.shields.io/npm/l/opencv-server-socket.svg?style=flat-square"
          alt="License">
   </a>
 </p>
 <p align="center">
-  <a href="https://www.bithound.io/github/Jermorin/opencv-node-server-socket">
-    <img src="https://www.bithound.io/github/Jermorin/opencv-node-server-socket/badges/score.svg"
+  <a href="https://www.bithound.io/github/Jermorin/opencv-server-socket">
+    <img src="https://www.bithound.io/github/Jermorin/opencv-server-socket/badges/score.svg"
          alt="bitHound Overall Score">
   </a>
   
-  <a href="https://www.bithound.io/github/Jermorin/opencv-node-server-socket/master/dependencies/npm">
-    <img src="https://www.bithound.io/github/Jermorin/opencv-node-server-socket/badges/dependencies.svg"
+  <a href="https://www.bithound.io/github/Jermorin/opencv-server-socket/master/dependencies/npm">
+    <img src="https://www.bithound.io/github/Jermorin/opencv-server-socket/badges/dependencies.svg"
          alt="bitHound Dependencies">
   </a>
   
-  <a href="https://www.bithound.io/github/Jermorin/opencv-node-server-socket/master/dependencies/npm">
-    <img src="https://www.bithound.io/github/Jermorin/opencv-node-server-socket/badges/devDependencies.svg"
+  <a href="https://www.bithound.io/github/Jermorin/opencv-server-socket/master/dependencies/npm">
+    <img src="https://www.bithound.io/github/Jermorin/opencv-server-socket/badges/devDependencies.svg"
          alt="bitHound Dev Dependencies">
   </a>
   
-  <a href="https://www.bithound.io/github/Jermorin/opencv-node-server-socket">
-    <img src="https://www.bithound.io/github/Jermorin/opencv-node-server-socket/badges/code.svg"
+  <a href="https://www.bithound.io/github/Jermorin/opencv-server-socket">
+    <img src="https://www.bithound.io/github/Jermorin/opencv-server-socket/badges/code.svg"
          alt="bitHound Code">
   </a>
 </p>
@@ -63,14 +63,14 @@
 ## Install
 
 ```sh
-npm i -g opencv-node-server-socket
+npm i -g opencv-server-socket
 ```
 
 ## Usage
 
 ###launch server
 ```js
-$: opencv-node-server-socket
+$: opencv-server-socket
 ```
 
 ###client usage

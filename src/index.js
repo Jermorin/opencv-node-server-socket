@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 import Io from 'socket.io';
 import Opencv from 'opencv';
 import Image from './models/image';
