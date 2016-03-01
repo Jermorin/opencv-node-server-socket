@@ -3,14 +3,16 @@
   "version": "0.0.1",
   "description": "Simple opencv server who emmit faces position",
   "main": "dist/index.js",
+  "bin": {
+    "opencv-node-server-socket": "dist/index.js"
+  },
   "files": [
-    "bin/",
     "dist/"
   ],
   "scripts": {
     "clean": "rimraf dist",
     "lint": "eslint src test",
-    "check": "npm run lint -s && dependency-check package.json --entry src",
+    "check": "npm run lint -s",
     "watch": "watch 'npm run build' src test",
     "test": "ENV_VAR=ci mocha --compilers js:babel-core/register",
     "prebuild": "npm run check -s && npm run clean -s",
@@ -19,7 +21,8 @@
     "coverage": "babel-node node_modules/isparta/bin/isparta cover _mocha",
     "coveralls": "npm run coverage -s && coveralls < coverage/lcov.info",
     "postcoveralls": "rimraf ./coverage",
-    "prepublish": "npm run build -s"
+    "prepublish": "npm run build -s",
+    "sample": "babel-node sample/index.js"
   },
   "repository": {
     "type": "git",
@@ -51,6 +54,7 @@
     "chai": "^3.5.0",
     "mocha": "^2.4.5",
     "opencv": "^5.0.0",
+    "request": "^2.69.0",
     "socket.io": "^1.4.5"
   }
 }
