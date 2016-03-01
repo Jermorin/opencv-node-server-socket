@@ -1,16 +1,12 @@
 language: node_js
 os:
     - osx
-node_js:
-  - v5
-  - v4
-  - '0.12'
-  - '0.10'
 before_install:
     - brew update
     - brew upgrade
     - brew install cmake
     - brew tap homebrew/science
     - brew install opencv
+    - brew install node
 after_script:
   - 'npm run coveralls'
