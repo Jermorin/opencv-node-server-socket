@@ -1,7 +1,6 @@
 import server from '../src/index';
 import socket from 'socket.io-client';
 import chai, {expect} from 'chai';
-import path from 'path';
 
 const serverUrl = 'http://localhost:3000';
 
