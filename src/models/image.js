@@ -13,7 +13,7 @@ class Image {
       if (this.path) {
         resolve(new Buffer(fs.readFileSync(this.path).toString('base64'), 'base64'));
       } else if (this.url) {
-        this.loadRemote().then(resolve);
+        this.loadRemote().then(resolve).catch(e => reject(e));
       } else if (this.base64) {
         // remove 'data:image/jpeg;base64,' if included
         this.base64 = this.base64.substring(this.base64.indexOf(',') + 1);
@@ -30,10 +30,11 @@ class Image {
         url: this.url,
         encoding: null
       }, (err, response, body) => {
-        if (!err && response.statusCode == 200) {
-          resolve(new Buffer(body))
-        } else {
+        if (err) {
           reject({msg: `Image : can\'t be load from url ${err}`});
+        }
+        else if (response.statusCode == 200) {
+          resolve(new Buffer(body))
         }
       })
     })
@@ -43,7 +44,7 @@ class Image {
     return new Promise((resolve, reject) => {
       this.load().then((content) => {
         resolve(content)
-      })
+      }).catch(e => reject(e));
     })
   }
 }
