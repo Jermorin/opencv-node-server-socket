@@ -8,7 +8,7 @@ const io = Io();
 
 function detectFace(image) {
   return new Promise((resolve, reject) => {
-    image.detectObject('dist/front.xml',
+    image.detectObject('face.xml',
       {},
       (err, faces) => {
         if (err) {
