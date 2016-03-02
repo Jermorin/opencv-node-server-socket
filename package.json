@@ -1,6 +1,6 @@
 {
   "name": "opencv-server-socket",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Simple opencv server who emit faces position",
   "main": "dist/index.js",
   "bin": {
@@ -14,10 +14,9 @@
     "lint": "eslint src test",
     "check": "npm run lint -s",
     "watch": "watch 'npm run build' src test",
-    "test": "ENV_VAR=ci mocha --compilers js:babel-core/register",
+    "test": "npm run build && mocha --compilers js:babel-core/register",
     "prebuild": "npm run check -s && npm run clean -s",
-    "build": "babel --optional runtime src -d dist",
-    "postbuild": "npm run test -s",
+    "build": "babel --optional runtime src -d dist && cp ./node_modules/opencv/data/haarcascade_frontalface_alt.xml dist/front.xml",
     "coverage": "babel-node node_modules/isparta/bin/isparta cover _mocha",
     "coveralls": "npm run coverage -s && coveralls < coverage/lcov.info",
     "postcoveralls": "rimraf ./coverage",

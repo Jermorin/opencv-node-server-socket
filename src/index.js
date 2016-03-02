@@ -8,7 +8,7 @@ const io = Io();
 
 function detectFace(image) {
   return new Promise((resolve, reject) => {
-    image.detectObject('./node_modules/opencv/data/haarcascade_frontalface_alt.xml',
+    image.detectObject('dist/front.xml',
       {},
       (err, faces) => {
         if (err) {
