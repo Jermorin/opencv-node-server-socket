@@ -77,6 +77,9 @@ $: opencv-server-socket
 ```
 
 ###client usage
+
+See also : [opencv-react-electron](https://github.com/Jermorin/opencv-react-electron)
+
 ```js
 import socket from 'socket.io-client';
 
