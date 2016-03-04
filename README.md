@@ -72,6 +72,9 @@ npm i -g opencv-server-socket
 ## Usage
 
 ###launch server
+
+See also : [opencv-server-socket-docker](https://github.com/Jermorin/opencv-server-socket-docker)
+
 ```js
 $: opencv-server-socket
 ```
